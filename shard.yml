@@ -1,0 +1,13 @@
+name: cr-poc-ipfs-pubsub-comments
+version: 0.1.0
+
+authors:
+  - your-name-here <your-email-here>
+
+targets:
+  cr-poc-ipfs-pubsub-comments:
+    main: src/cr-poc-ipfs-pubsub-comments.cr
+
+crystal: 0.35.1
+
+license: MIT

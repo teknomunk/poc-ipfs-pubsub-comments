@@ -1,0 +1,24 @@
+<html>
+	<body>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/pubsub-comment.js"></script>
+		<script src="js/comments.js"></script>
+		<script>
+			pubsub_comment.channel = "test-comments"
+			$(function(){
+				pubsub_comment.init()
+			})
+		</script>
+
+		<form>
+			Name: <input id="ps-name" type="text"/><br/>
+			<br/>
+			<textarea id="ps-comment" rows=10 cols=80></textarea><br/>
+			<br/>
+			<a href="#" onclick="pubsub_comment.submit()">Submit</a>
+		</form>
+
+		<h4>Comments:</h4>
+		<div id="ps-comment-area"></div>
+	</body>
+</html>
